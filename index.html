@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="GCSQ7UxUnA9LbXjdvK7l8jHqt0AEjQiWyRVVeMwR-KA" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Digital Store</title>
+</head>
+<body>
+    <header>
+        <h1>Digital Store</h1>
+
+    </header>
+    
+
+    <div id="Contenedor">
+        
+       
+        <div class="box1" onclick="abrir('sites/win10pro.html')">
+           
+            <img class="Imagen1" src="sites/imagenes/producto1.png" alt="Producto1">
+            <span>Windows 10 Pro Key</span>
+            <p class="descripcion1">$15 USD</p>
+            <button>Comprar</button>
+        </div>
+        
+
+        <div class="box2" onclick="abrir('sites/win11pro.html')">
+            <img class="Imagen2" src="sites/imagenes/producto2.png" alt="Producto2">
+            <span>Windows 11 Pro Key</span>
+            <p class="descripcion2">$15 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="box3" onclick="abrir('sites/win10home.html')">
+            <img class="Imagen3" src="sites/imagenes/producto3.png" alt="Producto3">
+            <span>Windows 10 Home Key</span>
+            <p class="descripcion3">$15 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="box4" onclick="abrir('sites/win11home.html')">
+            <img class="Imagen4" src="sites/imagenes/producto4.png" alt="Producto4">
+            <span>Windows 11 Home Key</span>
+            <p class="descripcion4">$15 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="flecha-izquierda" onclick="moverIzquierda()">←</div>
+        <div class="flecha-container" onclick="moverDerecha()">→</div>
+
+        <div class="box5" onclick="abrir('sites/win10enterprise.html')">
+            <img class="Imagen5" src="sites/imagenes/producto5.png" alt="Producto5">
+            <span>Windows 10 Enterprise Key</span>
+            <p class="descripcion5">$15 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="box6" onclick="abrir('sites/win11enterprise.html')">
+            <img class="Imagen6" src="sites/imagenes/producto6.png" alt="Producto5">
+            <span>Windows 11 Enterprise Key</span>
+            <p class="descripcion6">$15 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="box7" onclick="abrir('sites/win10education.html')">
+            <img class="Imagen7" src="sites/imagenes/producto7.png" alt="Producto5">
+            <span>Windows 10 Education Key</span>
+            <p class="descripcion7">$15 USD</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="box8" onclick="abrir('sites/win11education.html')">
+            <img class="Imagen8" src="sites/imagenes/producto8.png" alt="Producto5">
+            <span>Windows 11 Education Key</span>
+            <p class="descripcion8">$15 USD</p>
+            <button>Comprar</button>
+        </div>
+    
+
+    </div>
+
+    <script>
+
+        
+        
+        function moverDerecha() {
+
+            var contenedor = document.getElementById('Contenedor');
+            contenedor.style.marginLeft = '-100%';
+        
+        }
+      
+
+        function moverIzquierda() {
+            var contenedor = document.getElementById('Contenedor');
+            contenedor.style.marginLeft = '0';
+        }
+
+        function abrir(archivo) {
+            window.location.href = archivo
+        }
+    
+    </script>
+
+    <footer id="footer">
+        <nav>
+            <li><a href="#">Información al Usuario Financiero</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Defensa del Consumidor</a></li>
+            <p class="Derechos">©Tienda Digital.</p>
+        </nav>
+    </footer>
+
+
+
+</body>
+</html>
